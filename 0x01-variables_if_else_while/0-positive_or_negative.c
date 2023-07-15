@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* main - entry point of the program
+/**
+ * main - entry point of the program
  * Return: 0
- */
+*/
 int main(void)
 {
 	int n;
@@ -27,4 +26,3 @@ int main(void)
 	}
 	return (0);
 }
-
