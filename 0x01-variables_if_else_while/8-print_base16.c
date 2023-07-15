@@ -8,11 +8,11 @@ int main(void)
 	int i = 0;
 	char ch;
 
-	while (i <= 15) {
+	while (i <= 15)
+	{
 		ch = i + '0';
-		if (ch > '9') {
+		if (ch > '9')
 			ch = ch + 'a' - '0' - 10;
-		}
 		putchar(ch);
 		i++;
 	}
