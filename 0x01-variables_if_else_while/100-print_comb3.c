@@ -1,31 +1,27 @@
 #include <stdio.h>
 /**
- *main - entry point of program 
- *Return: 0
+ * main - entry point of program
+ * Return:0
 */
 int main(void)
 {
 	int i;
 	int j;
 
-	i = 0;
-	while (i < 100)
+	for (i = 0; i < 9; i++)
 	{
-		j = i + 1;
-		while (j < 100)
+		for (j = i + 1; j < 10; j++) 
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			if (i != 98 || j != 99)
+			putchar(i + '0');
+			putchar(j + '0');
+			if (i == 8 && j == 9)
 			{
-				putchar(',');
+				break;
 			}
-			j++;
+			putchar(',');
+			putchar(' ');
 		}
-		i++;
 	}
 	return (0);
 }
+
