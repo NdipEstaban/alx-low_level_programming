@@ -14,7 +14,7 @@ void print_rev(char *s)
 	for (ind = 0; s[ind] != '\0'; ind++)
 		;
 	/*prints character starting from the last*/
-	for(--ind; ind >= 0; --ind)
+	for (--ind; ind >= 0; --ind)
 		_putchar(s[ind]);
 	_putchar('\n');
 }
