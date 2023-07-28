@@ -1,11 +1,11 @@
 /**
  * reverse_array - reverses an array of integers
  *
- * @a: array of integers
+ * @a: pointer to array
  * @n: number of items in array
  *
- * Return: always nothing
-*/
+ * Return: void
+ */
 void reverse_array(int *a, int n)
 {
 	int temp;
