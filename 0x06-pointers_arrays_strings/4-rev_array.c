@@ -5,7 +5,7 @@
  * @n: number of items in array
  *
  * Return: always nothing
- */
+*/
 void reverse_array(int *a, int n)
 {
 	int temp;
