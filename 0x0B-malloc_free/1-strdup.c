@@ -1,6 +1,6 @@
 #include<stdlib.h>
 /*
- * *_strdup - returns a pointer to a duplicate string of @str
+ * *_strdup - a function that duplicates a string
  *
  * @str: string to duplicate
  *
