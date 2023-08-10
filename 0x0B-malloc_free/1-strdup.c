@@ -5,7 +5,7 @@
  * @str: string to duplicate
  *
  * Return: NULL if str == NULL
- * 	   @str
+ *	   @str
 */
 char *_strdup(char *str)
 {
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	l = 0;
 	while (str[l] != '\0')
 		l++;
-	s = malloc((l+1) * sizeof(char));
+	s = malloc((l + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
 	i = 0;
