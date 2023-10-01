@@ -1,27 +1,33 @@
-/**
- * _pow_recursion - a function that returns the power of @x by @y x^y
- *
- * Description: this method is good for speed, check this youtube video
- *   https://youtu.be/wAyrtLAeWvI?list=PL2_aWCzGMAwLz3g66WrxFGSXvSsvyfzCO
- *
- * @x: integer x
- * @y: integer y
- *
- * Return: the power of @x by @y
-*/
-int _pow_recursion(int x, int y)
-{
-	int even;
+#include "main.h"
 
-	if (y < 0)		/*if y is a negative number, return -1*/
+int actual_sqrt_recursion(int n, int i);
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to calculate the square root of
+ *
+ * Return: the resulting square root
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
 		return (-1);
-	else if (y == 0)	/*x to the power of 0 is 1*/
-		return (1);
-	else if (y % 2 == 0)	/*if y is an even number*/
-	{
-		even = _pow_recursion(x, y / 2);
-		return (even * even);
-	}
-	else			/*if y is odd*/
-		return (x * _pow_recursion(x, y - 1));
+	return (actual_sqrt_recursion(n, 0));
+}
+
+/**
+ * actual_sqrt_recursion - recurses to find the natural
+ * square root of a number
+ * @n: number to calculate the sqaure root of
+ * @i: iterator
+ *
+ * Return: the resulting square root
+ */
+int actual_sqrt_recursion(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (actual_sqrt_recursion(n, i + 1));
 }
