@@ -3,6 +3,7 @@
 
 void _puts_recursion(char *s);
 void _putchar(char s);
+int _strlen_recursion(char *s);
 
 #endif
 
