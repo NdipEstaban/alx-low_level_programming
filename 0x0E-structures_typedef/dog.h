@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include<stdio.h>
 /**
  * struct dog - representation of a dog data type
@@ -11,3 +14,5 @@ struct dog{
 	char *owner;
 	float age;
 }
+
+#endif
